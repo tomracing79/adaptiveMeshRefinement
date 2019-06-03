@@ -1,11 +1,14 @@
 #!/bin/bash
 #
 #-------------------------------------------------#
-# Contributor: Tobias Holzmann                    #
-# Updated on:  13 November 2017                   #
+# 
+# Contributor: Tobias Holzmann 
+# Contributor: Tom van den Brink
+#
+# Updated on:  03 June 2019                  #
 #-------------------------------------------------#
 # Topic:       Adaptive mesh refinement           #
-# OpenFOAM:    5.x                                #
+# OpenFOAM:    6.x                                #
 #-------------------------------------------------#
 # Website:     https://Holzmann-cfd.de            #
 # Email:       Tobias.Holzmann@Holzmann-cfd.de    #
@@ -13,7 +16,7 @@
 
 
 #------------------------------------------------------------------------------
-foamVersion="OpenFOAM-5.x"
+foamVersion="OpenFOAM-6.x"
 
 
 #------------------------------------------------------------------------------
@@ -75,8 +78,8 @@ Start simulation
 
 
 #------------------------------------------------------------------------------
-echo -e "   - Call pimpleDyMFoam and start the simulation (~10 - 20 minutes)"
-pimpleDyMFoam > logSimulation
+echo -e "   - Call pimpleFoam and start the simulation (~10 - 20 minutes)"
+pimpleFoam > logSimulation
 
 
 #------------------------------------------------------------------------------

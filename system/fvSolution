@@ -1,7 +1,7 @@
 /*--------------------------------*- C++ -*----------------------------------*\
 | =========                 |                                                 |
 | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  5.x                                   |
+|  \\    /   O peration     | Version:  6.x                                   |
 |   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
@@ -85,24 +85,9 @@ PIMPLE
     nNonOrthogonalCorrectors 0;
     residualControl
     {
-        S
-        {
-            relTol      0;
-            tolerance   1e-6;
-        }
-
-        U
-        {
-            relTol      0;
-            tolerance   1e-5;
-        }
-
-        p
-        {
-            relTol      0;
-            tolerance   1e-3;
-        }
-
+        S       1e-6;
+        U       1e-5;
+        p       1e-3;
     }
 }
 
